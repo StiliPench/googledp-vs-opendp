@@ -1,0 +1,25 @@
+module(
+    name = "dp_comparison",
+    version = "0.1",
+)
+
+# Differential Privacy Common (repo root)
+bazel_dep(name = "differential_privacy_common", version = "4.0.0")
+git_override(
+    module_name = "differential_privacy_common",
+    remote = "https://github.com/google/differential-privacy.git",
+    commit = "a156f38f332a5e1f7a942fa08341076c2e7ad923",
+    strip_prefix = ".",  # root of repo
+)
+
+# Differential Privacy C++ (cc/)
+bazel_dep(name = "differential_privacy_cc", version = "4.0.0")
+git_override(
+    module_name = "differential_privacy_cc",
+    remote = "https://github.com/google/differential-privacy.git",
+    commit = "a156f38f332a5e1f7a942fa08341076c2e7ad923",
+    strip_prefix = "cc",  # cc/ folder as module root
+)
+
+# Abseil
+bazel_dep(name = "abseil-cpp", version = "20250127.1", repo_name = "com_google_absl")

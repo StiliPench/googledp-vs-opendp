@@ -1,0 +1,12 @@
+/target/
+
+small_dataset.csv
+medium_dataset.csv
+large_dataset.csv
+opendp_native_results.csv
+
+.vscode/
+.idea/
+.DS_Store
+
+*.log

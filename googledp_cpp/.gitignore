@@ -1,0 +1,15 @@
+bazel-*
+bazel-bin
+bazel-out
+bazel-testlogs
+
+small_dataset.csv
+medium_dataset.csv
+large_dataset.csv
+gdp_native_results.csv
+
+.vscode/
+.idea/
+.DS_Store
+
+*.log

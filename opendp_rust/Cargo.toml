@@ -1,0 +1,9 @@
+[package]
+name = "opendp_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+opendp = { version = "0.13.0", features = ["untrusted", "partials"] }
+
+csv = "1.3"
