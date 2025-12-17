@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-opendp = { version = "0.13.0", features = ["untrusted", "partials"] }
+opendp = { version = "0.13.0", features = ["untrusted", "partials", "contrib"] }
 
 csv = "1.3"

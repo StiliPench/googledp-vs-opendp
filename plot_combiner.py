@@ -7,5 +7,5 @@ for p in ["googledp_cpp/gdp_native_results.csv","opendp_rust/opendp_native_resul
     except FileNotFoundError:
         pass
 combined = pd.concat(dfs, ignore_index=True)
-combined.to_csv("combined_laplace_results.csv", index=False)
-print("Wrote combined_laplace_results.csv with", len(combined), "rows")
+combined.to_csv("combined_results.csv", index=False)
+print("Wrote combined_results.csv with", len(combined), "rows")
